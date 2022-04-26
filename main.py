@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 
 import re
 
+from wordcloud import WordCloud
+
 from nltk.corpus import stopwords
 import string
 from nltk.tokenize import word_tokenize
@@ -185,6 +187,22 @@ plt.show()
 train_df['text'] = train_df.apply(lambda x: preprocess_text(x.text), axis=1)
 
 texts = train_df['text']
+
+# wordcloud
+long_string = ''
+string_list = train_df['text'].apply(lambda x: ' '.join([w for w in x]))
+long_string = long_string.join([line for line in string_list])
+# create the wordcloud
+# Create a WordCloud object
+wordcloud = WordCloud(background_color="white",
+                      max_words=2000,
+                      contour_color='steelblue',
+                      width=1000, height=600).generate(long_string)
+# Generate a word cloud
+plt.imshow(wordcloud)
+# Visualize the word cloud
+plt.show()
+
 dictionary = corpora.Dictionary(texts)
 corpus = [dictionary.doc2bow(text) for text in texts]
 
