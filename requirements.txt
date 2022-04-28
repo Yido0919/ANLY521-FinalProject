@@ -1,0 +1,7 @@
+seaborn
+matplotlib
+wordcloud
+pickle
+pyLDAvis
+bertopic
+sentence_transformers
