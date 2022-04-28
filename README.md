@@ -25,6 +25,15 @@ This is our base LDA model to perform the topic modeling task.
 `reduce_pca` and `reduce tsne` processed the components and reduce dimensions. 
 `get_document_topic_lda` produces the document topic mapping.
 
-## ``
+usage: 
+
+`python Base_LDA.py --train_file ./dreaddit/dreaddit-train-allTexts.csv`
+
+## `bert.py`
+
+This is our Bert model to perform the same topic modeling task. 
+
+usage: 
+`python bert.py --train_file ./dreaddit/dreaddit-train-allTexts.csv`
 
 
