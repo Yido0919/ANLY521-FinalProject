@@ -7,9 +7,9 @@ This project intends to apply Latent Dirichlet allocation(LDA) and BERT to detec
 
 ### Files
 
-* `dreaddit/dreaddit-test-allTexts.csv` and `dreaddit/dreaddit-train-allTexts.csv`
+`dreaddit/dreaddit-test-allTexts.csv` and `dreaddit/dreaddit-train-allTexts.csv`
 
-* `main.py`
+`base_LDA.py` 
 
 ### Methodology
 
