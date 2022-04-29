@@ -55,6 +55,6 @@ This is our Bert model to perform the same topic modeling task.
 `preprocess_text` is a function that preprocesses the text data, including punctuations removal, tokenization, stop word removal, and stemming. 
 
 usage: 
-`python bert.py --train_file ./dreaddit/dreaddit-train-allTexts.csv`
+`python Bert_NewEnv.py --train_file ./dreaddit/dreaddit-train-allTexts.csv`
 
 
